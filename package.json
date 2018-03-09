@@ -31,7 +31,9 @@
   },
   "homepage": "https://github.com/jakearchibald/idb-keyval#readme",
   "devDependencies": {
+    "babel-core": "^6.26.0",
     "rollup": "^0.56.5",
+    "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-uglify": "^3.0.0",
     "uglify-js": "^2.7.0"
   }

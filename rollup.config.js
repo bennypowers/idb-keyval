@@ -1,4 +1,5 @@
 import uglify from 'rollup-plugin-uglify';
+import babel from 'rollup-plugin-babel';
 
 export default {
   input: 'idb-keyval.js',
@@ -7,6 +8,9 @@ export default {
   ],
   output: [{
     file: 'dist/idb-keyval-browser.js',
+    plugins: [
+      babel(),
+    ],
     format: 'iife',
     name: 'idbKeyval',
   }, {
